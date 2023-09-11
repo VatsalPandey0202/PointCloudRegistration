@@ -17,6 +17,5 @@ See `requirements.txt` for more details.
 ```bash
 python3 trainNgeNet.py /path/to/NgeNet/config
 ```
-The config which was used in the paper is here: `config/eardataset.yaml`  
-Every training and model parameter can be adjusted in these config files.
+
 
