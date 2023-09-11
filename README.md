@@ -19,3 +19,6 @@ This method first uses GC-Net for rigid registration followed by NDP for non-rig
 [Non-rigid Point Cloud Registration for Middle Ear Diagnostics (C2P-Net)](https://gitlab.com/nct_tso_public/c2p-net)
 
 [Distinctive 3D local deep descriptors, ICPR 2020](https://github.com/fabiopoiesi/dip)
+
+## TODO
+Adding requirements.txt files and explanations on how to use the code.
