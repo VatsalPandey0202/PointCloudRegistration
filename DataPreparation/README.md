@@ -69,10 +69,10 @@ Here's an explanation of each argument:
    - This argument sets the distance threshold for TOF (Time-of-Flight) data. It is used for quality checking and removing sample not similar to original data.
 
 3. `--pc_dist_thresh` (Type: `float`, Default: `20.0`):
-   - Similar to `--tof_dist_thresh`, this argument sets the distance threshold for the PC (Point Cloud) data. It serves the same purpose but for a different point cloud.
+   - Similar to `--tof_dist_thresh`, this argument sets the distance threshold for the PC (Point Cloud) data. It serves the same purpose but for PC point cloud.
 
 4. `--confidence_thresh` (Type: `float`, Default: `0.80`):
-   - This argument defines a confidence threshold for accepting test data. The script may use this threshold for quality checking or filtering out data points with confidence scores below this value.
+   - This argument defines a confidence threshold for accepting test data. The script use this threshold for quality checking or filtering out data points with confidence scores below this value from the PointNet output.
 
 5. `--use_avg` (Type: `bool`, Default: `True`):
    - A boolean argument that controls whether to use the average as a threshold. If set to `True`, it suggests using an average value for some operation; otherwise, it may use other threshold values.
