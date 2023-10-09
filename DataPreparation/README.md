@@ -27,17 +27,10 @@ Here is an explanation of the code and how to run it with arguments:
 
 12. **RANSAC+ICP**: It performs RANSAC+ICP registration again, possibly after augmenting the data.
 
-To run this script with arguments, you would typically use the command line. For example:
-
-```bash
-python script_name.py --voxel_size 0.01 --tof_dist_thresh 20.0 --pc_dist_thresh 20.0 --confidence_thresh 0.80 --use_avg True --crop True --range 0 --N 20000
-```
-
-You can replace `script_name.py` with the actual name of the Python script file. Adjust the argument values as needed for your specific use case.
 #### Run
 Execute run.py to perform data augmentation and generate sample pairs that are registered using RANSAC+ICP.
 ```shell
-python script_name.py --voxel_size 0.01 --tof_dist_thresh 20.0 --pc_dist_thresh 20.0 --confidence_thresh 0.80 --use_avg True --crop True --range 0 --N 20000
+python run.py --voxel_size 0.01 --tof_dist_thresh 20.0 --pc_dist_thresh 20.0 --confidence_thresh 0.80 --use_avg True --crop True --range 0 --N 20000
 ```
 Here's an explanation of each argument:
 
