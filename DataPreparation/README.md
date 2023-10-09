@@ -27,6 +27,34 @@ Here is an explanation of the code and how to run it with arguments:
 
 12. **RANSAC+ICP**: It performs RANSAC+ICP registration again, possibly after augmenting the data.
 
+
+
+#### Setup
+
+# Define the Conda environment name
+```shell
+conda_env_name= myenv
+```
+# Create a Conda environment with Python 3.8 (you can change the version if needed)
+```shell
+conda create -n $conda_env_name python=3.8
+```
+# Activate the Conda environment
+```shell
+conda activate $conda_env_name
+```
+
+# Install packages from requirements.txt using pip
+```shell
+pip install -r requirements.txt
+```
+echo "Conda environment $conda_env_name created and activated."
+
+
+
+
+
+
 #### Run
 Execute run.py to perform data augmentation and generate sample pairs that are registered using RANSAC+ICP.
 ```shell
