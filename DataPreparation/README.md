@@ -1,4 +1,4 @@
-#### Data Preparation
+### Data Preparation
 This folder is a part of pipeline for data augmentation and point cloud registration. It performs various tasks related to processing point cloud data, augmenting it, and then running point cloud registration algorithms like RANSAC and ICP.
 
 Here is an explanation of the code and how to run it with arguments:
@@ -29,22 +29,22 @@ Here is an explanation of the code and how to run it with arguments:
 
 
 
-#### Setup
+### Setup
 
-# Define the Conda environment name
+#### Define the Conda environment name
 ```shell
 conda_env_name= myenv
 ```
-# Create a Conda environment with Python 3.8 (you can change the version if needed)
+#### Create a Conda environment with Python 3.8 (you can change the version if needed)
 ```shell
 conda create -n $conda_env_name python=3.8
 ```
-# Activate the Conda environment
+#### Activate the Conda environment
 ```shell
 conda activate $conda_env_name
 ```
 
-# Install packages from requirements.txt using pip
+#### Install packages from requirements.txt using pip
 ```shell
 pip install -r requirements.txt
 ```
@@ -55,7 +55,7 @@ echo "Conda environment $conda_env_name created and activated."
 
 
 
-#### Run
+### Run
 Execute run.py to perform data augmentation and generate sample pairs that are registered using RANSAC+ICP.
 ```shell
 python run.py --voxel_size 0.01 --tof_dist_thresh 20.0 --pc_dist_thresh 20.0 --confidence_thresh 0.80 --use_avg True --crop True --range 0 --N 20000
