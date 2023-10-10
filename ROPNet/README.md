@@ -1,18 +1,8 @@
 # [Point Cloud Registration using Representative Overlapping Points (ROPNet)](https://arxiv.org/abs/2107.02583)
 
-- Our solution based on ROPNet and [OverlapPredator](https://github.com/overlappredator/OverlapPredator) won **the second place** on the [MVP Registration Challenge (ICCV Workshop 2021)](https://mvp-dataset.github.io/MVP/Registration.html). [[Technical Report](https://arxiv.org/abs/2110.09129)], [[Zhihu](https://zhuanlan.zhihu.com/p/423011401)]
-
 ## Abstract
 
-3D point cloud registration is a fundamental task in robotics and computer vision. Recently, many learning-based point cloud registration methods based on correspondences have emerged. However, these methods heavily rely on such correspondences and meet great challenges with partial overlap. In this paper, we propose ROPNet, a new deep learning model using Representative Overlapping Points with discriminative features for registration that transforms partial-to-partial registration into partial-to-complete registration. Specifically, we propose a context-guided module which uses an encoder to extract global features for predicting point overlap score. To better find representative overlapping points, we use the extracted global features for coarse alignment. Then, we introduce a Transformer to enrich point features and remove non-representative points based on point overlap score and feature matching. A similarity matrix is built in a partial-to-complete mode, and finally, weighted SVD is adopted to estimate a transformation matrix. Extensive experiments over ModelNet40 using noisy and partially overlapping point clouds show that the proposed method outperforms traditional and learning-based methods, achieving state-of-the-art performance.
-
-## Environment
-
-The code has been tested on Ubuntu 16.04, Python 3.7, PyTorch 1.7, Open3D 0.9.
-
-## Dataset
-
-Download [ModelNet40](https://modelnet.cs.princeton.edu) from [here](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip) [435M].
+ROPNet uses discriminative features for registration that transforms partial-to-partial registration into partial-to-complete registration. A context-guided module is used which uses an encoder to extract global features for predicting point overlap score. To better find representative overlapping points, it uses the extracted global features for coarse alignment. A Transformer is used to enrich point features and remove non-representative points based on point overlap score and feature matching. A similarity matrix is built in a partial-to-complete mode, and finally, weighted SVD is adopted to estimate a transformation matrix. Though the medthod has been tested on a simple ModelNet40 dataset, I have modified the network architecture so that it can fit a complex data like TOF & PC MRI.
 
 ## Model Training
 
