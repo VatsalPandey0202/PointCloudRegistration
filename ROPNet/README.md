@@ -1,4 +1,4 @@
-# [Point Cloud Registration using Representative Overlapping Points (ROPNet)](https://arxiv.org/abs/2107.02583)
+# Point Cloud Registration using Representative Overlapping Points (ROPNet)
 
 ## Abstract
 
